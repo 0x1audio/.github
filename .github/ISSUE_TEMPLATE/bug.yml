@@ -1,0 +1,93 @@
+name: Something doesn't work
+description: A bug in this app, the SDK, the mixel command or the template.
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. A clear report gets fixed first.
+
+        This repository is one official Mixel app, the SDK or the template. For something in Mixel itself, choose **Help › Send Feedback…** in Mixel instead. Found a security problem? Don't post it here: see [0x1audio.com/security](https://0x1audio.com/security).
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What went wrong?
+      options:
+        - It stopped with an error
+        - The result sounds wrong
+        - It doesn't install or open
+        - Something on screen looks or reads wrong
+        - mixel check, test, run or dev does something unexpected
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you saw, in your own words. Paste any error text as it appeared.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen
+      description: The steps, from opening the app or running the command. Say which file you used (its format, length and channels are enough).
+      placeholder: |
+        1. Open Audio Converter.
+        2. Add a 24-bit WAV, 3 minutes, stereo.
+        3. Choose FLAC and MP3, then press Convert.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: The version of this app or package
+      description: An app's version is in the menu on its card, in Mixel's Apps section. For the SDK and the mixel command, run `mixel --version`. For the template, the create-mixel-app version you ran.
+      placeholder: "0.3.2"
+    validations:
+      required: true
+  - type: input
+    id: mixel
+    attributes:
+      label: Mixel's version
+      description: Mixel › About Mixel. Leave it empty if Mixel isn't involved (mixel check, test or run on their own).
+      placeholder: "0.1.18"
+  - type: dropdown
+    id: computer
+    attributes:
+      label: Your computer
+      options:
+        - A Mac with Apple silicon (M1 or later)
+        - A Mac with an Intel processor
+        - Linux (the mixel command only)
+        - Windows (the mixel command only)
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: The system version
+      placeholder: "macOS 15.4"
+  - type: textarea
+    id: log
+    attributes:
+      label: The log, if you have it
+      description: |
+        `mixel dev` prints the app's log in your terminal, and `mixel doctor --json` describes your setup. Paste the part around the problem. Take out anything you don't want public, like your name in a file path.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send it
+      options:
+        - label: I looked through the open issues, and this isn't one of them.
+          required: true
+        - label: There's nothing private here (no unreleased music, no personal paths I mind showing).
+          required: true

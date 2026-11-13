@@ -1,0 +1,35 @@
+name: An idea for this app or the SDK
+description: Something that would help you make music, or build apps for Mixel.
+labels: ["idea", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Start with what you're trying to do, not the feature. Someone may know a way that works today, and a good description of the job makes a better feature.
+
+        An idea for a whole new app? Post it in [Discussions › Ideas](https://github.com/orgs/0x1audio/discussions/categories/ideas), where people looking for a first app to build will see it.
+  - type: textarea
+    id: job
+    attributes:
+      label: What you're trying to do
+      description: The moment in your work where this comes up.
+      placeholder: When I bounce stems for a collaborator, I need every file at 44.1 kHz and 24-bit, and I convert them one by one.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How you do it today
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help
+      description: Your idea, if you have one. Sketches and screenshots welcome.
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Want to build it?
+      options:
+        - label: I'd like to send a pull request for this, once we agree on the shape.

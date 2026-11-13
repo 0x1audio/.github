@@ -1,0 +1,27 @@
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ask anything about building for Mixel: apps, pages, the SDKs, `mixel`, the MCP servers, review. When someone answers, mark the answer, so the next person finds it.
+
+        Something broken in Mixel itself? Choose **Help › Send Feedback…** in Mixel instead.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What you're trying to do, what you tried, and what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: The code, if it helps
+      description: The smallest piece that shows it. Usually the action in app.py, or the part of app.json it's about.
+      render: python
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Your setup
+      description: Paste what `mixel doctor --json` prints. Take out your name if it's in a path.
+      render: json

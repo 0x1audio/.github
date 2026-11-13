@@ -1,0 +1,16 @@
+# The issue chooser for every public 0x1audio repository without its own templates
+# (create-mixel-app and whatever comes next).
+blank_issues_enabled: false
+contact_links:
+  - name: Something in Mixel itself
+    url: https://0x1audio.com/help
+    about: Mixel isn't developed in these repositories. In Mixel, choose Help › Send Feedback…, or email support@0x1audio.com.
+  - name: A question about building an app
+    url: https://github.com/orgs/0x1audio/discussions/categories/q-a
+    about: Ask in Discussions, where answers stay findable for the next person.
+  - name: A security problem
+    url: https://0x1audio.com/security
+    about: Please tell us privately, never in a public issue. This page says how.
+  - name: The developer docs
+    url: https://docs.0x1audio.com/start
+    about: Your first app in five minutes, every API, and every error code with its fix.

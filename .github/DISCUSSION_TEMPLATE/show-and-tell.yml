@@ -1,0 +1,38 @@
+labels: ["show and tell"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Made something with Mixel's SDK, the MCP servers or a script? Show it here, finished or not. Half-built apps and rough scripts are welcome; so are questions about where to take them.
+  - type: input
+    id: link
+    attributes:
+      label: Where it lives
+      description: A GitHub repository, or a gist for a script.
+      placeholder: https://github.com/you/sampler-ready
+  - type: textarea
+    id: what
+    attributes:
+      label: What it does for a musician
+      description: One or two sentences, the way you'd say it to a friend in the studio.
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How it's built
+      description: The interesting part. A control, a library you used, something Mixel's SDK made easy or hard.
+  - type: textarea
+    id: screens
+    attributes:
+      label: Screenshots or a short clip
+      description: Drag them in. Light and dark, if you have both.
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where it is
+      options:
+        - An idea, with a first try
+        - It works on my Mac
+        - Sent for review
+        - In Mixel's Apps section
