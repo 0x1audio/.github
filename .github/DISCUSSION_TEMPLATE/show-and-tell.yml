@@ -3,7 +3,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Made something with Mixel's SDK, the MCP servers or a script? Show it here, finished or not. Half-built apps and rough scripts are welcome; so are questions about where to take them.
+        Made something with the 0x1audio SDK, the MCP servers or a script? Show it here, finished or not. Half-built apps and rough scripts are welcome; so are questions about where to take them.
   - type: input
     id: link
     attributes:
@@ -21,7 +21,7 @@ body:
     id: how
     attributes:
       label: How it's built
-      description: The interesting part. A control, a library you used, something Mixel's SDK made easy or hard.
+      description: The interesting part. A control, a library you used, something the SDK made easy or hard.
   - type: textarea
     id: screens
     attributes:
